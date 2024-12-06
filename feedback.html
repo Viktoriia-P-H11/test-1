@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Feedback</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content-feedback">
+            <header class="header">
+                <div class="logo">
+                    <img src="/images/logo.png" alt="Logo" class="logo">
+                </div>
+                <nav class="nav">
+                  <ul>
+                    <li><a href="./home.html"  class="active">Home</a></li>
+                    <li><a href="./about.html#about" >About</a></li>
+                    <li><a href="./booking.html#booking">Booking</a></li>
+                    <li><a href="./shop.html#shop">Shop</a></li>
+                    <li><a href="./feedback.html#contact">Feedback</a></li>
+                  </ul>        
+                </nav>
+            </header>
+            <div class="form-feedback">
+                <div class="form-reviews">
+                <div class="review-title">
+                    <h3 class="reviews-H">Your feedback inspires us to improve! </h3>
+                    <p class="reviews-P">We are delighted to hear you enjoy our work and are </p>
+                    <p class="reviews-P">open to constructive criticism.</p>
+                </div>
+                <div class="form-reviews-input">
+                    <form id="contact-form-reviews">
+                        <label for="first-name-reviews">First name</label>
+                        <input type="text" id="first-name-reviews" name="first-name-reviews" placeholder="Viktoriia" required>              
+                        <label for="last-name">Last name</label>
+                        <input type="text" id="last-name-reviews" name="last-name-reviews" placeholder="Veldi Bra" required>
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email" placeholder="email@Viktoriia.com" required>
+                        <label for="message">Your message</label>
+                        <textarea id="message" name="message" placeholder="Enter your review" required></textarea>              
+                        <button class="button-form" type="submit">Submit</button>
+                    </form>
+                    </div>
+                </div>
+                <div class="customers-reviews">
+                    <h3 class="customers-H">Reviews from Our Customers</h3>
+                
+                    <div class="review-container">
+                        <img src="./images/Ellipse 1.png" alt="Emily S." class="review-image">
+                        <div class="review-text">
+                            <div class="review-author">Emily S.</div>
+                            <div class="costumers-P">
+                                Excellent service! Everything was done quickly and professionally. I'll definitely come back again.
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="review-container">
+                        <img src="./images/Ellipse 2.png" alt="John D." class="review-image">
+                        <div class="review-text">
+                            <div class="review-author">John D.</div>
+                            <div class="costumers-P">
+                                Professional approach and friendly staff. Highly recommend.
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="review-container">
+                        <img src="./images/Ellipse 3.png" alt="Sarah B." class="review-image">
+                        <div class="review-text">
+                            <div class="review-author">Sarah B.</div>
+                            <div class="costumers-P">
+                                I’m very pleased with the results. Thank you for your work!
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="review-container">
+                        <img src="./images/Ellipse4.png" alt="Michael R." class="review-image">
+                        <div class="review-text">
+                            <div class="review-author">Michael R.</div>
+                            <div class="costumers-P">
+                                Fantastic experience! Everything exceeded my expectations. Will recommend to friends!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <footer class="footer">
+                <div class="info">
+                    <div class="logo-footer">
+                        <img src="/images/logo.png" alt="Logo" class="logo">
+                        <p class="footer-adrese-text">Stenersgata 1, 0050 Oslo</p>
+                    </div>
+                </div>
+            <div class="links">
+                    <a href="#" "id=about">About Us</a>
+                    <a href="#" "id=shop">Shop</a>
+                    <a href="#" "id=booking">Booking</a>
+                    <a href="#" "id=feedbak">Feedback</a>
+            </div>
+                <div class="contact">
+                    <p "id=contact">Phone: +123456789</p>
+                    <p "id=contact">Email: example@example.com</p>
+                    <a href="#" "id=contact">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" "id=contact">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" "id=contact">
+                        <i class="fab fa-instagram"></i>
+                    </a>                    
+            </div>
+            </footer>
+        </div>
+    </div>
+    <script>
+        const form = document.getElementById("contact-form-reviews");
+        const submitButton = form.querySelector(".button-form");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+            const firstName = document.getElementById("first-name-reviews").value;
+            const lastName = document.getElementById("last-name-reviews").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+            alert(`Thank you for your feedback, ${firstName} ${lastName}!\nYour message: "${message}" has been sent.`);
+            form.reset();
+        });
+    </script>
+</body>
+</html>
