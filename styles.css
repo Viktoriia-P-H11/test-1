@@ -1045,8 +1045,8 @@ a:hover {
 }
 
 .logo-footer {
-    width: 240px;
-    height: 72px;
+    width: 215px;
+    padding-left: 7px;
 }
 
 .content-booking {
